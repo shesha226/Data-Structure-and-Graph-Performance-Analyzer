@@ -14,19 +14,26 @@ public class ArrayStructure {
             System.out.println("3. Search");
             System.out.println("4. Display");
             System.out.println("5. Return to Main Menu");
+            System.out.print("Enter choice: ");
             
-            int choice = InputValidator.getIntInput(scanner, "Enter choice: ");
+            int choice = scanner.nextInt();
 
             if (choice == 5) break;
 
             switch (choice) {
                 case 1:
-                    int val = InputValidator.getIntInput(scanner, "Enter value to insert: ");
-                    arr[size++] = val;
-                    System.out.println("Inserted successfully.");
+                    System.out.print("Enter value to insert: ");
+                    int val = scanner.nextInt();
+                    if (size < arr.length) {
+                        arr[size++] = val;
+                        System.out.println("Inserted successfully.");
+                    } else {
+                        System.out.println("Array is full!");
+                    }
                     break;
                 case 2:
-                    int delVal = InputValidator.getIntInput(scanner, "Enter value to delete: ");
+                    System.out.print("Enter value to delete: ");
+                    int delVal = scanner.nextInt();
                     int index = -1;
                     for (int i = 0; i < size; i++) {
                         if (arr[i] == delVal) { index = i; break; }
@@ -40,7 +47,8 @@ public class ArrayStructure {
                     }
                     break;
                 case 3:
-                    int sVal = InputValidator.getIntInput(scanner, "Enter value to search: ");
+                    System.out.print("Enter value to search: ");
+                    int sVal = scanner.nextInt();
                     boolean found = false;
                     for (int i = 0; i < size; i++) {
                         if (arr[i] == sVal) {
