@@ -202,7 +202,7 @@ The Graph Operations menu enables users to create, manage, and traverse a graph 
 
 These operations demonstrate graph representation, vertex and edge management, and graph traversal algorithms.
 
----
+
 ### 5. Performance Comparison (Sample Output)
 
 When the **Performance Comparison** option is selected, the system displays a comparison of Linear Search, Binary Search, and Graph Traversals (BFS & DFS) based on the number of steps and execution time (in nanoseconds).
