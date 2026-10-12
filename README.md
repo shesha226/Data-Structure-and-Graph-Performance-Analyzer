@@ -202,29 +202,29 @@ The Graph Operations menu enables users to create, manage, and traverse a graph 
 
 These operations demonstrate graph representation, vertex and edge management, and graph traversal algorithms.
 
----
+
 ### 5. Performance Comparison (Sample Output)
 
 When the **Performance Comparison** option is selected, the system displays a comparison of Linear Search, Binary Search, and Graph Traversals (BFS & DFS) based on the number of steps and execution time (in nanoseconds).
 
 **Sample Console Output:**
 
+```text
 ==================================================
-           PERFORMANCE COMPARISON
+            PERFORMANCE COMPARISON
 ==================================================
-Operation           | Algorithm      | Steps | Time (ns)
+Operation         | Algorithm      | Steps | Time (ns)
 --------------------------------------------------
-Linear Search: Found at index 999 in 1000 steps.
-Binary Search: Found at index 999 in 10 steps.
-Search              | Linear Search  | 1000  | 5233800
-Search              | Binary Search  | 10    | 1231900
-Graph Traversal     | BFS            | 5     | 800
-Graph Traversal     | DFS            | 5     | 100
+Search            | Linear Search  | 1000  | 5233800
+Search            | Binary Search  | 10    | 1231900
+Graph Traversal   | BFS            | 5     | 800
+Graph Traversal   | DFS            | 5     | 100
 --------------------------------------------------
 Explanation: Binary Search O(log n) requires significantly
 fewer steps than Linear Search O(n) on sorted data, and graph
 traversals visit vertices efficiently based on edge structures.
 ==================================================
+```
 
 ## Instructions for Running the Program
 
